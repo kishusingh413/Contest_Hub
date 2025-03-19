@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-
+import { v4 as uuidv4 } from 'uuid';
 const CODECHEF_URL = "https://www.codechef.com/contests";
 
 
@@ -22,6 +22,8 @@ export const getCodeChefContests = async () => {
                 const timeElements = contest.querySelectorAll("._timer__container_7s2sw_590 p");
         
                 return {
+                    contestId: uuidv4(),
+                    platform: "CodeChef",
                     name: nameElement ? nameElement.innerText.trim() : "Unknown Contest",
                     link: linkElement ? linkElement.href : "#",
                     startTime: timeElements.length > 0 ? Array.from(timeElements).map(el => el.innerText.trim()).join(" ") : "Unknown Time"

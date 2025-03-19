@@ -30,6 +30,7 @@ export const addBookmark = async (req, res) => {
 // Get user's bookmarks
 export const getBookmarks = async (req, res) => {
     try {
+        console.log("User ID: ", req.user.id);
         const bookmarks = await Bookmark.find({ userId: req.user.id });
         res.json(bookmarks);
     } catch (error) {

@@ -1,5 +1,6 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
+import { v4 as uuidv4 } from 'uuid';
 import puppeteer from "puppeteer";
 
 const LEETCODE_URL = "https://leetcode.com/contest/";
@@ -25,7 +26,11 @@ export const getLeetCodeContests = async () => {
                 const name = card.querySelector(".truncate")?.innerText.trim();
                 const linkElement = card.querySelector("a[href^='/contest/']");
                 const link = linkElement ? "https://leetcode.com" + linkElement.getAttribute("href") : null;
-                return { name, link };
+                const contestId = uuidv4() ;
+                const startTime = "00:00 00/00/0000" ;
+                const platform = "LeetCode" ;
+                
+                return { name, link ,contestId, startTime, platform};
             });
         });
 
