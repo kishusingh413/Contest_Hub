@@ -33,7 +33,18 @@ A web application that tracks coding contests from platforms like **Codeforces, 
 git clone https://github.com/kishusingh413/Contest_Hub.git
 cd Contest_Hub
 
+2️⃣ Backend Setup
 
+cd contest-tracker-backend
+npm install
+npm start
+
+3️⃣ Frontend Setup
+
+cd contest-tracker-frontend
+npm install
+npm start
+```
 ## **API Endpoints** 🌐
 
 🔹 Authentication
@@ -57,7 +68,7 @@ POST	/api/solutions/add	Add a solution for a contest
 GET	/api/solutions/:contestId	Get all solutions for a contest
 
 
-Usage Instructions 🛠️
+## **Usage Instructions** 🛠️
 
 Sign Up / Login
 
