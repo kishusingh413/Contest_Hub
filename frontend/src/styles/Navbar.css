@@ -1,0 +1,101 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
+    border-bottom: 2px solid #ddd;
+}
+
+/* Left Section (Links) */
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* Right Section (User Info & Theme Toggle) */
+.navbar-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Buttons */
+.navbar button, .navbar a {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar .login-btn {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.navbar .register-btn {
+    border: 1px solid #28a745;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.navbar .logout-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+
+/* Theme Toggle Button */
+.navbar .theme-toggle {
+    border: none;
+    background-color: var(--theme-btn-bg);
+    color: var(--theme-btn-text);
+}
+
+/* Light/Dark Mode Variables */
+:root {
+    --navbar-bg: #f8f9fa;
+    --navbar-text: #000;
+    --theme-btn-bg: #000;
+    --theme-btn-text: #fff;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --navbar-bg: #333;
+    --navbar-text: #fff;
+    --theme-btn-bg: #fff;
+    --theme-btn-text: #000;
+}
+
+/* Apply to Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    border: none;
+    background-color: var(--theme-btn-bg);
+    color: var(--theme-btn-text);
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
