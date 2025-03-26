@@ -13,7 +13,7 @@ const Navbar = () => {
     }, [theme]);
 
     return (
-        <nav className={`navbar ${theme === "dark" ? "dark-mode" : ""}`}>
+        <nav className={`navbar ${theme === "dark" ? "dark-mode" : "light-mode"}`}>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
                 <Link to="/contests">Contests</Link>

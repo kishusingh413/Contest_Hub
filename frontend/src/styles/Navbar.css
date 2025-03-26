@@ -63,8 +63,14 @@
     color: var(--theme-btn-text);
 }
 
+.home .theme-toggle {
+    border: none;
+    background-color: var(--theme-btn-bg);
+    color: var(--theme-btn-text);
+}
+
 /* Light/Dark Mode Variables */
-:root {
+.light-mode {
     --navbar-bg: #f8f9fa;
     --navbar-text: #000;
     --theme-btn-bg: #000;
@@ -73,7 +79,7 @@
 
 /* Dark Mode */
 .dark-mode {
-    --navbar-bg: #333;
+    --navbar-bg: #858585;
     --navbar-text: #fff;
     --theme-btn-bg: #fff;
     --theme-btn-text: #000;
@@ -98,4 +104,11 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.home {
+    height: 90vh;
+    font-size: 1rem;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
 }
